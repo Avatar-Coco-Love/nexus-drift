@@ -47,19 +47,6 @@
 
   h2 { margin: 36px 0 12px; font-size: 1.2rem; }
 
-  .shots { display: grid; gap: 12px; grid-template-columns: 1fr; }
-  @media (min-width: 560px) { .shots { grid-template-columns: 1fr 1fr; } .shots .wide { grid-column: 1 / -1; } }
-  figure { margin: 0; }
-  .shots img, .placeholder {
-    display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 10px;
-    border: 1px solid var(--border); object-fit: cover; background: var(--panel);
-  }
-  .placeholder {
-    display: grid; place-items: center; color: var(--muted); font-size: .9rem;
-    border-style: dashed;
-  }
-  figcaption { margin: 6px 2px 0; color: var(--muted); font-size: .85rem; }
-
   ul.list { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
   ul.list li { position: relative; padding-left: 22px; }
   ul.list li::before {
@@ -79,18 +66,6 @@
   <h1>Nexus Drift</h1>
   <p class="pitch">Drop into procedurally generated caves, mine glowing deposits, and fight off swarms of geometric enemies. Everything is drawn from neon shapes.</p>
   <p class="platform">PC (keyboard &amp; mouse or controller). Not playable yet.</p>
-
-  <h2>Screenshots</h2>
-  <div class="shots">
-    <figure>
-      <img src="screenshots/mining.png" width="587" height="361" alt="A cyan mining beam cracks a cave wall while magenta, yellow and violet enemies close in">
-      <figcaption>Cutting into a wall with the mining beam</figcaption>
-    </figure>
-    <figure>
-      <img src="screenshots/tether.png" width="925" height="522" alt="Two yellow enemies linked by a glowing tether, with magenta triangles nearby">
-      <figcaption>Enemies linked by an energy tether</figcaption>
-    </figure>
-  </div>
 
   <h2>Working now</h2>
   <ul class="list">
